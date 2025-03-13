@@ -33,12 +33,15 @@
 }
 #navbar ul{
     display: flex;
+    font-family: 'Baloo Bhai', cursive;
 }
 
 #navbar::before{
     content: "";
     background-color: black;
     position: absolute;
+    top: 0px;
+    left: 0px;
     height: 100%;
     width: 100%;
     z-index: -1;
@@ -69,7 +72,7 @@
     display: flex;
     flex-direction: column;
     padding: 3px  200px;
-    height: 400px;
+    height: 1900px;
     justify-content: center;
     align-items: center;
 }
@@ -79,7 +82,67 @@
     position: absolute;
     background: url('../bg.jpg') no-repeat center/cover;
     height: 100%;
+    top: 0px;
+    left: 0px;
     width: 100%;
     z-index: -1;
     opacity: 0.89;
+}  
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif',serif;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif',serif;
+}
+
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: #f2f2f2;
+
+
+}
+#services .box img{
+    height: 160px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px  20px;
+    border: 2px solid #ffffff;
+    background-color: #4c00ff;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
 }
