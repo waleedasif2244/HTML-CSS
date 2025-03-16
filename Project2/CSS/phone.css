@@ -7,7 +7,7 @@
 #navbar ul li a{
     font-size: 1rem;
     padding: 0px 7px;
-    padding-bottom: 8px;
+    padding-bottom: 8px;     
 }
 /* Home section */
 #home{
@@ -33,7 +33,15 @@
 
 /* Client section  */
 #clients{
-    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+#clients img{
+    padding: 56px;
+    width: 66px;
+}
+.h-primary{
+    font-size: 26px; 
 }
 /* Contact us section */
 
