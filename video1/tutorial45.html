@@ -14,9 +14,14 @@
             'footer footer footer footer'
             ;
         }
+        
     @media only screen and (max-width:300px){
     body{
             background-color: red;
+        }
+    span{
+            display: block;
+            text-align: center;
         }
     }
 
@@ -24,11 +29,37 @@
         body{
             background-color: blue;
         }
+        .container{ 
+           grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+        }
+        aside{
+            display: none;
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
     }
 
     @media (min-width:500px) and (max-width: 800px){
         body{
             background-color: yellow;
+        }
+           .container{ 
+           grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer'
+            ;
+        }
+        span{
+            display: block;
+            text-align: center;
         }
     }
 
@@ -42,20 +73,36 @@
         padding: 23px;
         background-color: rgb(108, 179, 182);
     }
+    nav{
+            grid-area: navbar;
+        }  
+    section{
+            grid-area: section;
+        }
+    aside{
+            grid-area: aside;
+        }
+    footer{
+            grid-area: footer;
+            text-align: center;
+        }                                                   
     </style>
 </head>
 <body>
     <div class="container">
         <nav class="bdr">
-            Home About Contact 
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact us</span>
         </nav>
         <section class="bdr">
             <h2>Learn CSS in urdu</h2>
         </section>
         <aside class="bdr">
-            <h1>More about us</h1>
+            <h1>More about us</h1> 
         </aside>
     </div>
-    <footer>Copyright codewithwaleed 2025</footer>
+    <footer class="bdr">Copyright codewithwaleed 2025</footer>
 </body>
 </html>
